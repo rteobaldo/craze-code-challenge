@@ -5,7 +5,9 @@ var $ = require('gulp-load-plugins')({lazy: true});
 gulp.task('styles', function () {
   return gulp
   .src('./src/sass/**/*.scss')
-  .pipe($.sass().on('error', $.sass.logError))
+  .pipe($.sass({
+    includePaths: ['./node_modules']
+  }).on('error', $.sass.logError))
   .pipe($.autoprefixer('defaults'))
   .pipe($.cleanCss())
   .pipe(gulp.dest('public/css'))
