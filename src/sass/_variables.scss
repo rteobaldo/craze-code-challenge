@@ -1,4 +1,6 @@
 // Override Bootstrap variables
+$grid-columns: 15;
+$grid-gutter-width: 10px;
 
 $grid-breakpoints: (
   xs: 0,

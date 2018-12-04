@@ -5,89 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500|PT+Sans:700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
   <title>Craze</title>
 </head>
 <body>
-  <div class="container">
+  <section class="section-header">
+    <div class="container">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-lg-7">
+          <h1 class="heading-1"><img src="images/logo.png" alt="Craze"></h1>
+          <h2 class="subheading">A great new free psd theme to showcase your new app.</h2>
 
-    <section class="section--header row">
-      <div class="col">
-        <h1 class="heading">Craze</h1>
-        <h2 class="subheading">A great new free psd theme to showcase your new app.</h2>
-
-        <ul class="download-links">
-          <li><a href="#android">Android</a></li>
-          <li><a href="#iphone">iPhone</a></li>
-          <li><a href="#windows-phone">Windows Phone</a></li>
-        </ul>
+          <ul class="download-links">
+            <li class="download-links__link">
+              <a href="#app-store" target="_blank"><img src="images/icons/apple-icon.svg" alt="App Store"></a>
+            </li>
+            <li class="download-links__link">
+              <a href="#play-store" target="_blank"><img src="images/icons/android-icon.svg" alt="Play Store"></a>
+            </li>
+            <li class="download-links__link">
+              <a href="#windows-phone-store" target="_blank"><img src="images/icons/windows-icon.svg" alt="Windows Phone Store"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 offset-lg-1 align-self-end">
+          <img class="section__iphone" src="images/hand.png" alt="Craze App">
+        </div>
       </div>
-      <div class="col">
-        <img src="" alt="">
+    </div>
+  </section>
+
+  <section class="section-features">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-13 text-center">
+          <h3 class="heading-2">Craze Features</h3>
+          <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam ipsam quae officiis laboriosam placeat, reiciendis, nihil numquam in ratione molestias inventore voluptatem, doloremque praesentium dolor minus?</p>
+        </div>
       </div>
-    </section>
 
-    <section class="section--features">
-      <h3>Craze Features</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam ipsam quae officiis laboriosam placeat, reiciendis, nihil numquam in ratione molestias inventore voluptatem, doloremque praesentium dolor minus?</p>
-
-      <ul class="features-list">
-        <li class="features-list__item">
-          <strong>Flat Design</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+      <ul class="features-list row">
+        <li class="features-list__item col-lg-5">
+          <img class="features-list__icon" src="images/icons/monitor-icon.svg">
+          <strong class="features-list__feature-title">Flat Design</strong>
+          <p class="features-list__feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
         </li>
-        <li class="features-list__item">
-          <strong>Marketable</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+        <li class="features-list__item col-lg-5">
+          <img class="features-list__icon" src="images/icons/target-icon.svg">
+          <strong class="features-list__feature-title">Marketable</strong>
+          <p class="features-list__feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
         </li>
-        <li class="features-list__item">
-          <strong>Edit Photos</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+        <li class="features-list__item col-lg-5">
+          <img class="features-list__icon" src="images/icons/photo-icon.svg">
+          <strong class="features-list__feature-title">Edit Photos</strong>
+          <p class="features-list__feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
         </li>
-        <li class="features-list__item">
-          <strong>Edit Colors</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+        <li class="features-list__item col-lg-5">
+          <img class="features-list__icon" src="images/icons/pallete-icon.svg">
+          <strong class="features-list__feature-title">Edit Colors</strong>
+          <p class="features-list__feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
         </li>
-        <li class="features-list__item">
-          <strong>User Friendly</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+        <li class="features-list__item col-lg-5">
+          <img class="features-list__icon" src="images/icons/person-icon.svg">
+          <strong class="features-list__feature-title">User Friendly</strong>
+          <p class="features-list__feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
         </li>
-        <li class="features-list__item">
-          <strong>100% Editable</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+        <li class="features-list__item col-lg-5">
+          <img class="features-list__icon" src="images/icons/gear-icon.svg">
+          <strong class="features-list__feature-title">100% Editable</strong>
+          <p class="features-list__feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="section--about">
-      <h3>Whats Craze all About?</h3>
+  <section class="section-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h3 class="heading-2">Whats Craze all About?</h3>
+          <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum maxime, nemo reiciendis quibusdam illo dignissimos repellendus delectus quaerat.</p>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum maxime, nemo reiciendis quibusdam illo dignissimos repellendus delectus quaerat.</p>
+          <p class="section-description">Ex, perferendis voluptate saepe voluptas ad incidunt cupiditate maiores eum temporibus quae, suscipit aliquam earum impedit quod iusto sunt iste.</p>
 
-      <p>Ex, perferendis voluptate saepe voluptas ad incidunt cupiditate maiores eum temporibus quae, suscipit aliquam earum impedit quod iusto sunt iste.</p>
+          <ul class="section-about__list">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet consectetur elt</li>
+          </ul>
+        </div>
+        <div class="col-lg-7 offset-lg-1 text-right">
+          <img src="images/video.png">
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet consectetur elt</li>
-      </ul>
-    </section>
+  <section class="section-testimonials">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-13">
+          <blockquote>
+            <p>“Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”</p>
+            <cite>Sarah Hunt</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section--testimonials">
+  <section class="section-pricing-plans">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-13 text-center">
+          <h3 class="heading-2">Pricing Plans</h3>
+          <p class="section-description">Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.</p>
+        </div>
+      </div>
 
-    </section>
-
-    <section class="section--pricing-plans">
-      <h3>Pricing Plans</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum molestias, rerum, totam, a molestiae assumenda at saepe distinctio similique obcaecati?</p>
-
-      <ol class="pricing-plans__list">
-        <li class="pricing-plans__item">
+      <ol class="pricing-plans__list row align-items-center no-gutters">
+        <li class="pricing-plans__item col">
           <div class="pricing-plans__item-header">
-            <h4>Basic</h4>
+            <h4 class="pricing-plans__name">Basic</h4>
           </div>
-          <ul>
+          <strong class="pricing-plans__price">$19 <span>99</span></strong>
+          <ul class="pricing-plans__features-list">
             <li>Feature 1</li>
             <li>Feature 2</li>
             <li>Feature 3</li>
@@ -95,14 +138,15 @@
             <li>Feature 5</li>
           </ul>
           <div class="pricing-plans__item-footer">
-            <a href="#basic">Purchase</a>
+            <a class="btn-default" href="#basic">PURCHASE</a>
           </div>
         </li>
-        <li class="pricing-plans__item">
+        <li class="pricing-plans__item col">
           <div class="pricing-plans__item-header">
-            <h4>Standard</h4>
+            <h4 class="pricing-plans__name">Standard</h4>
           </div>
-          <ul>
+          <strong class="pricing-plans__price">$39 <span>99</span></strong>
+          <ul class="pricing-plans__features-list">
             <li>Feature 1</li>
             <li>Feature 2</li>
             <li>Feature 3</li>
@@ -110,14 +154,15 @@
             <li>Feature 5</li>
           </ul>
           <div class="pricing-plans__item-footer">
-            <a href="#standard">Purchase</a>
+            <a class="btn-default" href="#standard">PURCHASE</a>
           </div>
         </li>
-        <li class="pricing-plans__item">
+        <li class="pricing-plans__item col">
           <div class="pricing-plans__item-header">
-            <h4>Deluxe</h4>
+            <h4 class="pricing-plans__name">Deluxe</h4>
           </div>
-          <ul>
+          <strong class="pricing-plans__price">$59 <span>99</span></strong>
+          <ul class="pricing-plans__features-list">
             <li>Feature 1</li>
             <li>Feature 2</li>
             <li>Feature 3</li>
@@ -126,14 +171,15 @@
             <li>Feature 6</li>
           </ul>
           <div class="pricing-plans__item-footer">
-            <a href="#deluxe">Purchase</a>
+            <a class="btn-default" href="#deluxe">PURCHASE</a>
           </div>
         </li>
-        <li class="pricing-plans__item">
+        <li class="pricing-plans__item col">
           <div class="pricing-plans__item-header">
-            <h4>Unlimited</h4>
+            <h4 class="pricing-plans__name">Unlimited</h4>
           </div>
-          <ul>
+          <strong class="pricing-plans__price">$79 <span>99</span></strong>
+          <ul class="pricing-plans__features-list">
             <li>Feature 1</li>
             <li>Feature 2</li>
             <li>Feature 3</li>
@@ -141,24 +187,47 @@
             <li>Feature 5</li>
           </ul>
           <div class="pricing-plans__item-footer">
-            <a href="#unlimited">Purchase</a>
+            <a class="btn-default" href="#unlimited">PURCHASE</a>
           </div>
         </li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <section class="section--contact">
-    <h3>Say Hi & Get in Touch</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <section class="section-contact">
+    <h3 class="heading-2">Say Hi & Get in Touch</h3>
+    <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-    <ul>
-      <li><a href="#twitter">Twitter</a></li>
-      <li><a href="#facebook">Facebook</a></li>
-      <li><a href="#pinterest">Pinterest</a></li>
-      <li><a href="#google+">Google+</a></li>
-      <li><a href="#linkedin">LinkedIn</a></li>
-      <li><a href="#youtube">YouTube</a></li>
+    <ul class="social-links">
+      <li class="social-links__link">
+        <a href="#twitter" target="_blank">
+          <img src="images/icons/twitter-icon.svg" alt="Twitter"></a>
+      </li>
+      <li class="social-links__link">
+        <a href="#facebook" target="_blank">
+          <img src="images/icons/facebook-icon.svg" alt="Facebook">
+        </a>
+      </li>
+      <li class="social-links__link">
+        <a href="#pinterest" target="_blank">
+          <img src="images/icons/pinterest-icon.svg" alt="Pinterest">
+        </a>
+      </li>
+      <li class="social-links__link">
+        <a href="#google+" target="_blank">
+          <img src="images/icons/googleplus-icon.svg" alt="Google+">
+        </a>
+      </li>
+      <li class="social-links__link">
+        <a href="#linkedin" target="_blank">
+          <img src="images/icons/linkedin-icon.svg" alt="LinkedIn">
+        </a>
+      </li>
+      <li class="social-links__link">
+        <a href="#youtube" target="_blank">
+          <img src="images/icons/youtube-icon.svg" alt="YouTube">
+        </a>
+      </li>
     </ul>
   </section>
 

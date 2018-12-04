@@ -1,5 +1,25 @@
-@import "bootstrap/scss/variables";
-
 body {
-  font-family: 'Cantarell', $font-family-sans-serif;
+  font-family: 'Roboto', $font-family-sans-serif;
+}
+
+.heading-1 {
+  margin-bottom: 40px;
+}
+
+.heading-2 {
+  font-family: 'PT Sans', $font-family-sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #222222;
+}
+
+.subheading {
+  margin-bottom: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-description {
+  color: #848484;
 }
