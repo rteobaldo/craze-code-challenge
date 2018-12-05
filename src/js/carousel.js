@@ -13,6 +13,7 @@ const Carousel = (selector) => {
    * Changes position of slider
    */
   const moveSlider = (movesTo) => {
+    // Get slide width from CSS computed style
     let slideWidth = parseFloat(window.getComputedStyle(slides[0]).getPropertyValue('width'));
     let activeSlide = getActiveSlide().dataset.slideIndex;
     let total = ((slideWidth * movesTo) * -1);
@@ -51,6 +52,7 @@ const Carousel = (selector) => {
     frag.childNodes[0].classList.add('is-active');
     pagination.appendChild(frag);
 
+    // Create event listeners
     addPaginationEventListener();
   };
 
@@ -72,11 +74,17 @@ const Carousel = (selector) => {
     });
   };
 
+  /**
+   * Updates pagination when carousel is changed
+   */
   const updatePagination = (activeSlide) => {
     pagination.querySelector('.is-active').classList.remove('is-active');
     pagination.childNodes[activeSlide].classList.add('is-active');
   };
 
+  /**
+   * Rotates automatically the carousel until the user interacts with slider
+   */
   const autoRotate = () => {
     let activeSlide = parseInt(getActiveSlide().dataset.slideIndex);
     let slidesLength = slides.length - 1;
@@ -88,10 +96,16 @@ const Carousel = (selector) => {
     }
   };
 
+  /**
+   * Starts auto rotate slider (Interval 4 sec.)
+   */
   const startAutoRotate = () => {
     autoRotateObj = requestInterval(autoRotate, 4000);
   }
 
+  /**
+   * Stops auto rotate when user interacts
+   */
   const stopAutoRotate = () => {
     autoRotateObj.clear();
   };
