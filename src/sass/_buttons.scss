@@ -1,0 +1,16 @@
+.btn-default {
+  padding: 10.5px 33px;
+  font-family: 'PT Sans', $font-family-sans-serif;
+  color: $color-white;
+  font-size: 15px;
+  line-height: 18px;
+  background: $color-denim;
+  appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-white;
+  }
+}

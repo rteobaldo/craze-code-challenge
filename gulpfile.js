@@ -5,7 +5,9 @@ var $ = require('gulp-load-plugins')({lazy: true});
 gulp.task('styles', function () {
   return gulp
   .src('./src/sass/**/*.scss')
-  .pipe($.sass().on('error', $.sass.logError))
+  .pipe($.sass({
+    includePaths: ['./node_modules']
+  }).on('error', $.sass.logError))
   .pipe($.autoprefixer('defaults'))
   .pipe($.cleanCss())
   .pipe(gulp.dest('public/css'))
@@ -20,10 +22,13 @@ gulp.task('vendorScripts', function() {
 gulp.task('scripts', function () {
   return gulp.src([
     './src/js/!(vendor)**/!(main)*.js',
+    './src/js/carousel.js',
     './src/js/main.js'
   ])
   .pipe($.plumber())
-  .pipe($.babel())
+  .pipe($.babel({
+    presets: ['env']
+  }))
   .pipe($.concat('main.js'))
   .pipe($.uglify())
   .pipe(gulp.dest('public/js'))
@@ -61,8 +66,13 @@ gulp.task('browser-sync', ['styles', 'scripts'], function () {
 });
 
 gulp.task('deploy', function () {
-  return gulp
-  .src('./public/**/*')
+  return gulp.start(
+    'styles',
+    'vendorScripts',
+    'scripts',
+    'images',
+    'html'
+  );
 });
 
 gulp.task('watch', function () {

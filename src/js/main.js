@@ -1,0 +1,2 @@
+// Starts Carousel
+Carousel('.carousel');
