@@ -66,8 +66,13 @@ gulp.task('browser-sync', ['styles', 'scripts'], function () {
 });
 
 gulp.task('deploy', function () {
-  return gulp
-  .src('./public/**/*')
+  return gulp.start(
+    'styles',
+    'vendorScripts',
+    'scripts',
+    'images',
+    'html'
+  );
 });
 
 gulp.task('watch', function () {
