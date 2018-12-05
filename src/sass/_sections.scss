@@ -233,7 +233,7 @@
 }
 
 .pricing-plans__list {
-  margin-top: 17px;
+  margin: 17px 0 0;
   list-style: none;
   padding: 0;
 }
@@ -316,7 +316,7 @@
 */
 
 .section-contact {
-  padding: 103px 0 60px;
+  padding: 120px 0 60px;
   text-align: center;
 }
 
@@ -346,6 +346,12 @@
   &:last-child a { margin-right: 0 }
 }
 
+// Media queries
+
+@include media-breakpoint-down(lg) {
+  .section-contact { padding-top: 60px }
+}
+
 /*
 ** END: CONTACT
 */
@@ -354,6 +360,7 @@
 /*
 ** START: FOOTER
 */
+
 footer {
   display: flex;
   justify-content: center;
@@ -366,6 +373,17 @@ footer {
     margin: 0 16px;
     color: #848484;
     text-decoration: none;
+  }
+}
+
+// Media queries
+
+@include media-breakpoint-down(sm) {
+  footer {
+    flex-direction: column;
+
+    a { margin-bottom: 30px }
+    a:last-child { margin-bottom: 0 }
   }
 }
 
