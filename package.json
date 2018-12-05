@@ -2,7 +2,13 @@
   "name": "craze-code-challenge",
   "version": "0.0.1",
   "description": "",
+  "license": "MIT",
   "main": "gulpfile.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/gulp",
+    "deploy": "./node_modules/.bin/gulp deploy",
+    "serve": "./node_modules/.bin/gulp browser-sync"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
