@@ -22,10 +22,13 @@ gulp.task('vendorScripts', function() {
 gulp.task('scripts', function () {
   return gulp.src([
     './src/js/!(vendor)**/!(main)*.js',
+    './src/js/carousel.js',
     './src/js/main.js'
   ])
   .pipe($.plumber())
-  .pipe($.babel())
+  .pipe($.babel({
+    presets: ['env']
+  }))
   .pipe($.concat('main.js'))
   .pipe($.uglify())
   .pipe(gulp.dest('public/js'))
