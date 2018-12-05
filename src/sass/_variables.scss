@@ -1,4 +1,6 @@
+//////////////////////////////////////
 // Override Bootstrap variables
+//////////////////////////////////////
 $grid-columns: 15;
 $grid-gutter-width: 10px;
 
@@ -16,3 +18,18 @@ $container-max-widths: (
   lg: 960px,
   xl: 1180px
 );
+
+//////////////////////////
+// Colors
+//////////////////////////
+
+$color-white: #fff;
+$color-black: #000;
+$color-mine-shaft: #222222;
+$color-gray: #848484;
+$color-mercury-1: #e3e3e3;
+$color-mercury-2: #e7e7e7;
+$color-curious-blue: #3498db;
+$color-denim: #0d74b9;
+$color-silver-1: #c2c2c2;
+$color-silver-2: #c5c5c5;

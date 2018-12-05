@@ -36,14 +36,14 @@
 .carousel__pagination__item {
   display: block;
   padding: 5.5px;
-  border: 2px solid #3498db;
+  border: 2px solid $color-curious-blue;
   border-radius: 50%;
   margin-right: 5px;
-  background: #fff;
+  background: $color-white;
   appearance: none;
   cursor: pointer;
 
-  &.is-active { background: #3498db }
+  &.is-active { background: $color-curious-blue }
 
   &:focus { outline: none }
   &:last-child { margin-right: 0 }
